@@ -1,0 +1,10 @@
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+
+# Python cache (from site tooling)
+__pycache__/
+*.pyc
+
+# Local environment
+.local/

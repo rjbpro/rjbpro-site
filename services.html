@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RJB Contracting delivers interior fit-outs, rollout programs, store remodels, rebranding, EIFS & coatings, site surveys, and specialized construction solutions nationwide." />
+  <title>Services | RJB Contracting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Yantramanav:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .svc-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-left: 3px solid transparent;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .svc-card:hover { border-left-color: var(--orange); box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+    .svc-card .capability-num { font-family: var(--font-head); font-size: 2.5rem; color: var(--orange); line-height: 1; margin-bottom: .5rem; }
+    .svc-card .capability-title { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: .75rem; }
+    .svc-card .capability-desc { color: var(--gray-mid); line-height: 1.7; font-size: .95rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: var(--gray-light); margin-top: 2.5rem; }
+    .svc-card--wide { grid-column: span 3; }
+    .sp-item { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.5rem; background: rgba(255,255,255,.05); border-left: 3px solid var(--orange); }
+    .sp-item-num { font-family: var(--font-head); font-size: 1.5rem; color: var(--orange); min-width: 2rem; }
+    .sp-item-label { color: var(--white); font-weight: 500; font-size: 1.05rem; }
+    @media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr 1fr; } .svc-card--wide { grid-column: span 2; } }
+    @media (max-width: 600px) { .svc-grid { grid-template-columns: 1fr; } .svc-card--wide { grid-column: span 1; } }
+  </style>
+</head>
+<body style="padding-top:var(--nav-h);">
+
+  <nav class="site-nav solid" id="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <img src="https://rjbpro.com/wp-content/uploads/2023/06/RJB-Logo-WithDescriptor.png" alt="RJB Integrated Commercial Contractors" />
+      </a>
+      <div class="nav-links">
+                <a href="about-us.html">About Us</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-trigger">Services <span class="nav-caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="service-interior-fit-outs.html">Interior Fit-Outs</a>
+            <a href="service-rollout-programs.html">Rollout Programs</a>
+            <a href="service-store-remodels.html">Store Remodels</a>
+            <a href="service-rebranding-programs.html">Rebranding Programs</a>
+            <a href="service-eifs-coatings.html">EIFS &amp; Coatings</a>
+            <a href="service-site-surveys.html">Site Surveys</a>
+            <a href="service-specialized-solutions.html">Specialized Solutions</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sectors.html" class="nav-dropdown-trigger">Sectors <span class="nav-caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="sector-grocery.html">Grocery</a>
+            <a href="sector-qsr.html">QSR</a>
+            <a href="sector-retail.html">Retail</a>
+            <a href="sector-warehouse.html">Warehouse &amp; Distribution</a>
+            <a href="sector-sustainable-infrastructure.html">Sustainable Infrastructure</a>
+            <a href="sector-healthcare.html">Healthcare</a>
+          </div>
+        </div>
+        <a href="projects.html">Projects</a>
+        <a href="insights.html">Insights</a>
+        <a href="careers.html">Careers</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact-us.html" class="btn btn-orange">Start a Project</a>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+      <a href="about-us.html">About Us</a>
+  <div class="nav-mobile-section-label"><a href="services.html">Services</a></div>
+  <a href="service-interior-fit-outs.html" class="nav-mobile-child">Interior Fit-Outs</a>
+  <a href="service-rollout-programs.html" class="nav-mobile-child">Rollout Programs</a>
+  <a href="service-store-remodels.html" class="nav-mobile-child">Store Remodels</a>
+  <a href="service-rebranding-programs.html" class="nav-mobile-child">Rebranding Programs</a>
+  <a href="service-eifs-coatings.html" class="nav-mobile-child">EIFS &amp; Coatings</a>
+  <a href="service-site-surveys.html" class="nav-mobile-child">Site Surveys</a>
+  <a href="service-specialized-solutions.html" class="nav-mobile-child">Specialized Solutions</a>
+  <div class="nav-mobile-section-label"><a href="sectors.html">Sectors</a></div>
+  <a href="sector-grocery.html" class="nav-mobile-child">Grocery</a>
+  <a href="sector-qsr.html" class="nav-mobile-child">QSR</a>
+  <a href="sector-retail.html" class="nav-mobile-child">Retail</a>
+  <a href="sector-warehouse.html" class="nav-mobile-child">Warehouse &amp; Distribution</a>
+  <a href="sector-sustainable-infrastructure.html" class="nav-mobile-child">Sustainable Infrastructure</a>
+  <a href="sector-healthcare.html" class="nav-mobile-child">Healthcare</a>
+  <a href="projects.html">Projects</a>
+  <a href="insights.html">Insights</a>
+  <a href="careers.html">Careers</a>
+  <a href="contact-us.html" class="btn btn-orange" style="margin-top:1rem;align-self:flex-start;">Start a Project</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('images/hero-homepage.jpg');"></div>
+    <div class="page-hero-content">
+      <div class="section-label">What We Do</div>
+      <h1 class="t-section-head">Built to deliver at any scale.</h1>
+      <p>From single-store remodels to 500-location rollouts — RJB has the trades, the systems, and the national reach to get it done.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="content-section content-section--gray">
+    <div class="content-inner">
+      <div class="section-label">Our Services</div>
+      <h2 class="t-section-head">Seven ways we work.</h2>
+      <div class="svc-grid">
+        <a class="svc-card" href="service-interior-fit-outs.html">
+          <div class="capability-num">01</div>
+          <div class="capability-title">Interior Fit-Outs</div>
+          <div class="capability-desc">Full interior build-outs for new and existing commercial spaces — flooring, ceilings, walls, millwork, and fixtures.</div>
+        </a>
+        <a class="svc-card" href="service-rollout-programs.html">
+          <div class="capability-num">02</div>
+          <div class="capability-title">Rollout Programs</div>
+          <div class="capability-desc">Multi-site construction programs delivered with consistency across dozens or hundreds of locations simultaneously.</div>
+        </a>
+        <a class="svc-card" href="service-store-remodels.html">
+          <div class="capability-num">03</div>
+          <div class="capability-title">Store Remodels</div>
+          <div class="capability-desc">Phased renovation work in live retail environments — nights, weekends, and around your customers.</div>
+        </a>
+        <a class="svc-card" href="service-rebranding-programs.html">
+          <div class="capability-num">04</div>
+          <div class="capability-title">Rebranding Programs</div>
+          <div class="capability-desc">Full brand-standard execution from signage and finishes to fixtures and equipment — at portfolio scale.</div>
+        </a>
+        <a class="svc-card" href="service-eifs-coatings.html">
+          <div class="capability-num">05</div>
+          <div class="capability-title">EIFS &amp; Coatings</div>
+          <div class="capability-desc">Exterior insulation and finish systems, commercial coatings, and building envelope protection programs.</div>
+        </a>
+        <a class="svc-card" href="service-site-surveys.html">
+          <div class="capability-num">06</div>
+          <div class="capability-title">Site Surveys</div>
+          <div class="capability-desc">Pre-construction condition assessments and documentation that de-risk your program before a single crew mobilizes.</div>
+        </a>
+        <a class="svc-card svc-card--wide" href="service-specialized-solutions.html">
+          <div class="capability-num">07</div>
+          <div class="capability-title">Specialized Solutions</div>
+          <div class="capability-desc">Custom construction programs built around your operational needs — from unique scopes to industry-specific challenges.</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAR -->
+  <section class="sub-cta">
+    <div class="sub-cta-inner">
+      <h2>Ready to get started?</h2>
+      <a href="contact-us.html" class="btn btn-orange btn-arrow">Start a Project</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="https://rjbpro.com/wp-content/uploads/2023/06/RJB-Logo-WithDescriptor.png" alt="RJB Integrated Commercial Contractors" />
+          <p>National commercial contractor trusted by America's biggest retail brands. Family-owned and operated since 1992.</p>
+          <div class="footer-address">562 Ridge Road, Spring City, PA 19475<br />info@rjbpro.com</div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="about-us.html#leadership">Leadership</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service-interior-fit-outs.html">Interior Fit-Outs</a></li>
+            <li><a href="service-rollout-programs.html">Rollout Programs</a></li>
+            <li><a href="service-store-remodels.html">Store Remodels</a></li>
+            <li><a href="service-rebranding-programs.html">Rebranding Programs</a></li>
+            <li><a href="service-eifs-coatings.html">EIFS &amp; Coatings</a></li>
+            <li><a href="service-site-surveys.html">Site Surveys</a></li>
+            <li><a href="service-specialized-solutions.html">Specialized Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="contact-us.html">Start a Project</a></li>
+            <li><a href="subcontractors.html">Become a Subcontractor</a></li>
+            <li><a href="https://www.linkedin.com/company/rjbpro" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 RJB Contracting, Inc. All rights reserved. Family-owned and operated since 1992.</div>
+        <div class="footer-memberships">Member: ICSC · RFMA · ConnexFM</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileNav = document.getElementById('nav-mobile');
+    toggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RJB Contracting manages multi-site rollout programs with consistent quality across hundreds of locations — one team, one standard, nationwide." />
+  <title>Rollout Programs | RJB Contracting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Yantramanav:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .rollout-stats { display: grid; grid-template-columns: repeat(3,1fr); text-align: center; }
+    .rollout-stat { padding: 3rem 2rem; border-right: 1px solid rgba(255,255,255,.1); }
+    .rollout-stat:last-child { border-right: none; }
+    .rollout-stat-num { font-family: var(--font-head); font-size: 5rem; color: var(--orange); line-height: 1; }
+    .rollout-stat-label { color: rgba(255,255,255,.7); font-size: .95rem; margin-top: .5rem; text-transform: uppercase; letter-spacing: .08em; }
+    @media (max-width: 600px) { .rollout-stats { grid-template-columns: 1fr; } .rollout-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); } .rollout-stat:last-child { border-bottom: none; } }
+  </style>
+</head>
+<body style="padding-top:var(--nav-h);">
+
+  <nav class="site-nav solid" id="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <img src="https://rjbpro.com/wp-content/uploads/2023/06/RJB-Logo-WithDescriptor.png" alt="RJB Integrated Commercial Contractors" />
+      </a>
+      <div class="nav-links">
+                <a href="about-us.html">About Us</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-trigger">Services <span class="nav-caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="service-interior-fit-outs.html">Interior Fit-Outs</a>
+            <a href="service-rollout-programs.html">Rollout Programs</a>
+            <a href="service-store-remodels.html">Store Remodels</a>
+            <a href="service-rebranding-programs.html">Rebranding Programs</a>
+            <a href="service-eifs-coatings.html">EIFS &amp; Coatings</a>
+            <a href="service-site-surveys.html">Site Surveys</a>
+            <a href="service-specialized-solutions.html">Specialized Solutions</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="sectors.html" class="nav-dropdown-trigger">Sectors <span class="nav-caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="sector-grocery.html">Grocery</a>
+            <a href="sector-qsr.html">QSR</a>
+            <a href="sector-retail.html">Retail</a>
+            <a href="sector-warehouse.html">Warehouse &amp; Distribution</a>
+            <a href="sector-sustainable-infrastructure.html">Sustainable Infrastructure</a>
+            <a href="sector-healthcare.html">Healthcare</a>
+          </div>
+        </div>
+        <a href="projects.html">Projects</a>
+        <a href="insights.html">Insights</a>
+        <a href="careers.html">Careers</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact-us.html" class="btn btn-orange">Start a Project</a>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+      <a href="about-us.html">About Us</a>
+  <div class="nav-mobile-section-label"><a href="services.html">Services</a></div>
+  <a href="service-interior-fit-outs.html" class="nav-mobile-child">Interior Fit-Outs</a>
+  <a href="service-rollout-programs.html" class="nav-mobile-child">Rollout Programs</a>
+  <a href="service-store-remodels.html" class="nav-mobile-child">Store Remodels</a>
+  <a href="service-rebranding-programs.html" class="nav-mobile-child">Rebranding Programs</a>
+  <a href="service-eifs-coatings.html" class="nav-mobile-child">EIFS &amp; Coatings</a>
+  <a href="service-site-surveys.html" class="nav-mobile-child">Site Surveys</a>
+  <a href="service-specialized-solutions.html" class="nav-mobile-child">Specialized Solutions</a>
+  <div class="nav-mobile-section-label"><a href="sectors.html">Sectors</a></div>
+  <a href="sector-grocery.html" class="nav-mobile-child">Grocery</a>
+  <a href="sector-qsr.html" class="nav-mobile-child">QSR</a>
+  <a href="sector-retail.html" class="nav-mobile-child">Retail</a>
+  <a href="sector-warehouse.html" class="nav-mobile-child">Warehouse &amp; Distribution</a>
+  <a href="sector-sustainable-infrastructure.html" class="nav-mobile-child">Sustainable Infrastructure</a>
+  <a href="sector-healthcare.html" class="nav-mobile-child">Healthcare</a>
+  <a href="projects.html">Projects</a>
+  <a href="insights.html">Insights</a>
+  <a href="careers.html">Careers</a>
+  <a href="contact-us.html" class="btn btn-orange" style="margin-top:1rem;align-self:flex-start;">Start a Project</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('images/service-rollout-programs.jpg');"></div>
+    <div class="page-hero-content">
+      <div class="section-label"><a href="services.html" style="color:inherit;text-decoration:none;">Services</a></div>
+      <h1 class="t-section-head">Rollout Programs.</h1>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="content-section">
+    <div class="content-inner">
+      <div class="content-2col">
+        <div class="content-text">
+          <div class="section-label">Rollout Programs</div>
+          <h2 class="t-section-head">Consistent quality. Every location.</h2>
+          <p class="t-body">Running a construction program across dozens or hundreds of locations is a different discipline than building one great store. It requires systems, not just skill. RJB has been managing national rollout programs for America's largest retail and foodservice brands for decades — and we've built the infrastructure to prove it.</p>
+          <p class="t-body">Single-point accountability isn't a slogan — it's how we're structured. One program manager. One contact. One team responsible for every location from kickoff to closeout. We build rollout calendars, manage procurement, coordinate regional subcontractors, and report consistently so you always know where your program stands.</p>
+          <p class="t-body">Our national vendor network and in-house trade capabilities mean we're not dependent on local availability to hit your schedule. Whether you're opening 10 locations this quarter or 200, RJB has the bandwidth and the processes to deliver — without quality slipping as the numbers grow.</p>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/rollout2/700/500" alt="Multi-site rollout program management" class="content-img" loading="lazy" style="width:100%;height:auto;display:block;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="content-section content-section--gray">
+    <div class="content-inner">
+      <div class="section-label">What's Included</div>
+      <h2 class="t-section-head">Built for scale from day one.</h2>
+      <div class="capability-grid" style="margin-top:2rem;">
+        <div class="capability-card">
+          <div class="capability-num">01</div>
+          <div class="capability-title">Program Management</div>
+          <div class="capability-desc">One team manages every location — scheduling, procurement, subcontractor coordination, and reporting through a single point of contact. You get visibility without the overhead of managing multiple GCs.</div>
+        </div>
+        <div class="capability-card">
+          <div class="capability-num">02</div>
+          <div class="capability-title">Scheduling &amp; Sequencing</div>
+          <div class="capability-desc">We build rollout calendars that sequence locations by region, trade availability, and your operational windows — then we hit them. No surprises, no bottlenecks, no missed openings.</div>
+        </div>
+        <div class="capability-card">
+          <div class="capability-num">03</div>
+          <div class="capability-title">Quality Control</div>
+          <div class="capability-desc">Site supervisors, photo documentation, and punch-list tracking at every location ensure brand standards are met from store one to store five hundred. Quality doesn't degrade as the program scales.</div>
+        </div>
+        <div class="capability-card">
+          <div class="capability-num">04</div>
+          <div class="capability-title">National Vendor Network</div>
+          <div class="capability-desc">RJB's established relationships with national suppliers and regional subs mean your program won't stall waiting for materials or crews. We've built the relationships so your program doesn't have to.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="content-section content-section--navy-dark" style="padding:0;">
+    <div class="rollout-stats">
+      <div class="rollout-stat">
+        <div class="rollout-stat-num">48</div>
+        <div class="rollout-stat-label">States Active</div>
+      </div>
+      <div class="rollout-stat">
+        <div class="rollout-stat-num">500+</div>
+        <div class="rollout-stat-label">Locations Delivered</div>
+      </div>
+      <div class="rollout-stat">
+        <div class="rollout-stat-num">1</div>
+        <div class="rollout-stat-label">Point of Contact</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAR -->
+  <section class="sub-cta">
+    <div class="sub-cta-inner">
+      <h2>Ready to launch your rollout?</h2>
+      <a href="contact-us.html" class="btn btn-orange btn-arrow">Start a Project</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="https://rjbpro.com/wp-content/uploads/2023/06/RJB-Logo-WithDescriptor.png" alt="RJB Integrated Commercial Contractors" />
+          <p>National commercial contractor trusted by America's biggest retail brands. Family-owned and operated since 1992.</p>
+          <div class="footer-address">562 Ridge Road, Spring City, PA 19475<br />info@rjbpro.com</div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="about-us.html#leadership">Leadership</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service-interior-fit-outs.html">Interior Fit-Outs</a></li>
+            <li><a href="service-rollout-programs.html">Rollout Programs</a></li>
+            <li><a href="service-store-remodels.html">Store Remodels</a></li>
+            <li><a href="service-rebranding-programs.html">Rebranding Programs</a></li>
+            <li><a href="service-eifs-coatings.html">EIFS &amp; Coatings</a></li>
+            <li><a href="service-site-surveys.html">Site Surveys</a></li>
+            <li><a href="service-specialized-solutions.html">Specialized Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="contact-us.html">Start a Project</a></li>
+            <li><a href="subcontractors.html">Become a Subcontractor</a></li>
+            <li><a href="https://www.linkedin.com/company/rjbpro" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 RJB Contracting, Inc. All rights reserved. Family-owned and operated since 1992.</div>
+        <div class="footer-memberships">Member: ICSC · RFMA · ConnexFM</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileNav = document.getElementById('nav-mobile');
+    toggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  </script>
+</body>
+</html>
