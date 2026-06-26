@@ -12,7 +12,7 @@ We've been a family-owned company since 1992, and that shapes more than how we r
 
 ## Hands on, not just checks written
 
-Our team has partnered with Habitat for Humanity on volunteer build days, trading the commercial job site for a single-family home and the same tools we use every day. It's work our crews know how to do, put to a different purpose.
+Our team has partnered with Habitat for Humanity on volunteer build days, trading the commercial job site for a single-family home and the same tools we use every day. It's work our teams know how to do, put to a different purpose.
 
 ## Why it matters to us
 
