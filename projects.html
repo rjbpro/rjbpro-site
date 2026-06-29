@@ -6,6 +6,18 @@
   <meta name="description" content="RJB Contracting's project portfolio: retail construction, warehouse &amp; industrial, and asset maintenance programs built across America." />
   <title>Projects | RJB Contracting</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .project-filters { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem; }
+    .project-filter {
+      font-family: var(--font-museo, sans-serif);
+      font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--navy); background: var(--white);
+      border: 1px solid var(--gray-light); border-radius: 999px;
+      padding: 0.5rem 1.1rem; cursor: pointer; transition: var(--transition);
+    }
+    .project-filter:hover { border-color: var(--navy); }
+    .project-filter.is-active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+  </style>
 </head>
 <body style="padding-top:var(--nav-h);">
 
@@ -71,16 +83,17 @@
   <!-- PROJECTS GRID -->
   <section class="content-section content-section--gray">
     <div class="content-inner">
-      <div class="projects-grid">
-        <a class="project-card" href="project-01.html">
+      <div class="project-filters" id="project-filters" aria-label="Filter projects by service"></div>
+      <div class="projects-grid" id="projects-grid">
+        <a class="project-card" href="project-01.html" data-service="Interior Fit-Outs">
           <img src="images/project-photos/project-01.jpg" alt="T-Mobile Store Remodel" class="project-img" loading="lazy" />
           <div class="project-info">
-            <div class="project-cat">Interior Fit-Out</div>
+            <div class="project-cat">Interior Fit-Outs</div>
             <div class="project-name">T-Mobile Store Remodel</div>
             <div class="project-loc">Multiple locations, 10 to 20 per year</div>
           </div>
         </a>
-        <a class="project-card" href="project-02.html">
+        <a class="project-card" href="project-02.html" data-service="Rollout Programs">
           <img src="images/project-photos/project-02.jpg" alt="Kohl's Queline" class="project-img" loading="lazy" />
           <div class="project-info">
             <div class="project-cat">Rollout Programs</div>
@@ -88,7 +101,7 @@
             <div class="project-loc">Midwest, Northeast, East Coast</div>
           </div>
         </a>
-        <a class="project-card" href="project-03.html">
+        <a class="project-card" href="project-03.html" data-service="Store Remodels">
           <img src="images/project-photos/project-03.jpg" alt="PetSmart Fish Tank Program" class="project-img" loading="lazy" />
           <div class="project-info">
             <div class="project-cat">Store Remodels</div>
@@ -96,23 +109,23 @@
             <div class="project-loc">Nationwide</div>
           </div>
         </a>
-        <a class="project-card" href="project-04.html">
+        <a class="project-card" href="project-04.html" data-service="Interior Fit-Outs">
           <img src="images/project-photos/project-04.jpg" alt="Auntie Anne's Fit-Out" class="project-img" loading="lazy" />
           <div class="project-info">
-            <div class="project-cat">QSR</div>
+            <div class="project-cat">Interior Fit-Outs</div>
             <div class="project-name">Auntie Anne's Fit-Out</div>
             <div class="project-loc">Darien, CT</div>
           </div>
         </a>
-        <a class="project-card" href="project-05.html">
+        <a class="project-card" href="project-05.html" data-service="Store Remodels">
           <img src="images/project-photos/project-05.jpg" alt="Weis Markets Remodel" class="project-img" loading="lazy" />
           <div class="project-info">
             <div class="project-cat">Store Remodels</div>
             <div class="project-name">Weis Markets Remodel</div>
-            <div class="project-loc">TBD</div>
+            <div class="project-loc">Multiple locations</div>
           </div>
         </a>
-        <a class="project-card" href="project-06.html">
+        <a class="project-card" href="project-06.html" data-service="Specialized Solutions">
           <img src="images/project-photos/project-06.jpg" alt="Tesla Charger Installation" class="project-img" loading="lazy" />
           <div class="project-info">
             <div class="project-cat">Specialized Solutions</div>
@@ -184,6 +197,27 @@
     const toggle = document.getElementById('nav-toggle');
     const mobileNav = document.getElementById('nav-mobile');
     toggle.addEventListener('click', () => mobileNav.classList.toggle('open'));
+
+    // Project service filter — buttons build from the services present, so new projects appear automatically.
+    (function () {
+      const grid = document.getElementById('projects-grid');
+      const filters = document.getElementById('project-filters');
+      if (!grid || !filters) return;
+      const cards = Array.from(grid.querySelectorAll('.project-card'));
+      const order = ['Interior Fit-Outs','Rollout Programs','Store Remodels','Rebranding Programs','EIFS & Coatings','Site Surveys','Specialized Solutions'];
+      const present = order.filter(s => cards.some(c => c.dataset.service === s));
+      ['All', ...present].forEach((s, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'project-filter' + (i === 0 ? ' is-active' : '');
+        btn.textContent = s;
+        btn.addEventListener('click', () => {
+          filters.querySelectorAll('.project-filter').forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          cards.forEach(c => { c.style.display = (s === 'All' || c.dataset.service === s) ? '' : 'none'; });
+        });
+        filters.appendChild(btn);
+      });
+    })();
   </script>
 </body>
 </html>
