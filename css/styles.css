@@ -709,11 +709,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   align-items: center;
 }
 .map-text .section-head-block { margin-bottom: 1.5rem; }
-.map-text .t-section-head { color: var(--navy); }
+.map-text .section-label { color: rgba(255,255,255,0.6); }
+.map-text .t-section-head { color: var(--white); }
 .map-text p {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
+  color: rgba(255,255,255,0.75);
   color: var(--gray-mid);
   margin-bottom: 1.5rem;
 }
