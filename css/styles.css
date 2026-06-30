@@ -1288,15 +1288,17 @@ a.insight-card { text-decoration: none; color: inherit; }
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.project-card { position: relative; overflow: hidden; }
+.project-card { position: relative; display: flex; flex-direction: column; }
+.project-img-wrap { overflow: hidden; flex-shrink: 0; }
 .project-img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
   transition: transform 0.5s ease;
+  display: block;
 }
 .project-card:hover .project-img { transform: scale(1.04); }
-.project-info { padding: 1.25rem 0; }
+.project-info { padding: 0 0 1rem; }
 .project-cat {
   font-family: var(--font-museo);
   font-size: 0.7rem;
@@ -1304,14 +1306,14 @@ a.insight-card { text-decoration: none; color: inherit; }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--orange);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 .project-name {
   font-family: var(--font-head);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   color: var(--navy);
-  line-height: 1.1;
+  line-height: 1.05;
   margin-bottom: 0.5rem;
 }
 .project-loc {
