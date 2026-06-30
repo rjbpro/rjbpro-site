@@ -12,7 +12,7 @@ Drop your photos into this folder with the exact filenames below. The site will 
 | `hero-aboutus.jpg` | 1800px | 900px | 2:1 | About Us page hero |
 | `hero-careers.jpg` | 1800px | 900px | 2:1 | Careers page hero |
 | `hero-projects.jpg` | 1800px | 900px | 2:1 | Projects page hero |
-| `hero-contact.jpg` | 1800px | 900px | 2:1 | Contact page hero |
+| `hero-contactus.jpg` | 1800px | 900px | 2:1 | Contact page hero |
 
 ---
 
