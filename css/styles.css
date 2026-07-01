@@ -565,9 +565,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   object-fit: contain;
 }
 .client-logo--lg {
-  min-height: 36px;
-  max-height: 52px;
-  max-width: 180px;
+  min-height: 46px;
+  max-height: 64px;
+  max-width: 200px;
 }
 @keyframes logo-scroll {
   from { transform: translateX(0); }
